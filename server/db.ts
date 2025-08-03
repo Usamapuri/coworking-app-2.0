@@ -1,6 +1,5 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
-import { eq, and, desc, asc, gte, lte, sql, or, isNull, gt } from "drizzle-orm";
 import * as schema from "@shared/schema";
 
 // Create a PostgreSQL pool
@@ -13,8 +12,3 @@ const pool = new Pool({
 
 // Create a Drizzle instance
 export const db = drizzle(pool, { schema });
-
-// Rest of the file remains the same...
-${storage.toString()}
-
-export const storage = new DatabaseStorage();
